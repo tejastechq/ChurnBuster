@@ -1,0 +1,285 @@
+###############################################################################
+# 0 · METADATA (for traceability inside CRCT)
+###############################################################################
+meta:
+  product_codename: "ChurnBuster"
+  author: "Grok-3"
+  created: "2025-05-14"
+  version: "0.1-seed"
+
+###############################################################################
+# 1 · CORE OBJECTIVE
+###############################################################################
+objective:
+  long: |
+    Build and monetize a SaaS platform that empowers mid-market SaaS companies
+    ($1M–$50M ARR) to predict customer churn, identify upsell opportunities, and
+    automate retention strategies using AI-driven insights integrated with CRMs
+    (Salesforce, HubSpot). Achieve rapid revenue ($1M ARR in 12 months), dominate
+    the underserved mid-market segment, and scale to a $4B–$7B valuation by
+    capturing 5% of the $31B customer success market by 2029.
+  short: "Be the ‘Gainsight for mid-market SaaS’ with affordable, plug-and-play churn reduction."
+
+###############################################################################
+# 2 · TARGET PERSONAS
+###############################################################################
+personas:
+  - id: "csm-lead"
+    role: "Customer Success Manager / Director"
+    pains:
+      - "High churn rates (13–20%) erode revenue; no predictive tools"
+      - "Manual analysis of customer data is time-intensive"
+      - "Limited budget for enterprise-grade solutions like Gainsight"
+    success_metric: "Reduce churn by 5–10% within 90 days"
+
+  - id: "revops-lead"
+    role: "Head of Revenue Operations"
+    pains:
+      - "Missed upsell opportunities due to lack of actionable insights"
+      - "Fragmented data across CRM, support, and usage metrics"
+      - "Pressure to increase customer lifetime value (CLV)"
+    success_metric: "Increase CLV by 15% through targeted upsells"
+
+  - id: "ceo-mid-saas"
+    role: "CEO / Founder of Mid-Market SaaS (50–500 employees)"
+    pains:
+      - "Can’t afford $10,000+/month enterprise tools"
+      - "Churn risks derailing growth and investor confidence"
+      - "Need fast ROI to justify new SaaS spend"
+    success_metric: "Achieve measurable churn reduction with <3% overhead"
+
+###############################################################################
+# 3 · MARKET & COMPETITION SNAPSHOT
+###############################################################################
+market:
+  tam_2029_usd_b: 31          # Customer success market projection for 2026, growing to 2029
+  growth_cagr_pct: 22
+  drivers:
+    - "SaaS churn rates averaging 13–20% cost billions annually"
+    - "Mid-market SaaS ($1M–$50M ARR) underserved by enterprise tools"
+    - "AI-driven analytics adoption up 87% in SaaS (McKinsey 2024)"
+  incumbents:
+    - name: "Gainsight"
+      focus: "Enterprise customer success platform"
+      gaps: "High cost ($10,000+/month), complex onboarding, enterprise focus"
+    - name: "Totango"
+      focus: "Customer success analytics"
+      gaps: "Enterprise-centric, limited mid-market traction"
+    - name: "HubSpot CRM Analytics"
+      focus: "Native CRM reporting"
+      gaps: "Descriptive, not predictive; lacks automated playbooks"
+  wedge: |
+    Only platform offering affordable ($500–$2,000/month), AI-driven churn
+    prediction and retention automation for mid-market SaaS, with plug-and-play
+    CRM integrations and a 90-day ROI guarantee.
+
+###############################################################################
+# 4 · USE-CASES / JOB STORIES
+###############################################################################
+use_cases:
+  - id: "churn_alert"
+    story: |
+      When a customer’s usage drops or support tickets spike,
+      ChurnBuster’s AI flags high churn risk, sends an alert to the CSM via
+      Slack, and suggests a retention playbook (e.g., personalized email).
+  - id: "upsell_predict"
+    story: |
+      When a customer engages heavily with premium features,
+      ChurnBuster identifies upsell potential, notifies the RevOps team, and
+      recommends a targeted offer, increasing CLV.
+  - id: "roi_report"
+    story: |
+      When the CEO needs to justify ChurnBuster’s spend,
+      the platform generates a 90-day ROI report showing churn reduction and
+      CLV growth, downloadable as a PDF.
+
+###############################################################################
+# 5 · FUNCTIONAL + NON-FUNCTIONAL REQS
+###############################################################################
+requirements:
+  functional_mvp:
+    - "AI churn prediction model (85%+ accuracy, trained on CRM data)"
+    - "CRM integrations (Salesforce, HubSpot) via APIs"
+    - "Real-time dashboards for churn risk, CLV, and retention metrics"
+    - "Slack/email alerts for high-risk customers"
+    - "Basic retention playbooks (e.g., email templates, discount offers)"
+    - "React-based console for data visualization"
+  functional_phase2:
+    - "Upsell/cross-sell prediction module"
+    - "Automated playbooks with CRM-triggered actions"
+    - "Additional integrations (Pipedrive, Zoho)"
+    - "Data cleansing tools for messy CRM inputs"
+  non_functional:
+    security:
+      - "SOC-2 Type I compliance within 12 months"
+      - "Encrypted data storage and API calls (AES-256)"
+    scalability: "Support ≥10,000 customer records per tenant"
+    availability: "SLA 99.9% for SaaS control plane"
+    latency: "<200ms for churn prediction API calls (P95)"
+
+###############################################################################
+# 6 · ARCHITECTURE & DATA MODEL
+###############################################################################
+architecture:
+  components:
+    ai_predictor:
+      desc: "ML model (Python, TensorFlow) for churn and upsell predictions"
+    crm_connector:
+      desc: "API layer for Salesforce/HubSpot data ingestion (Node.js)"
+    alert_engine:
+      desc: "Triggers Slack/email notifications based on AI outputs"
+    dashboard_app:
+      desc: "React + Tailwind UI for real-time metrics and playbooks"
+    report_generator:
+      desc: "CRCT agent for PDF ROI reports using LaTeX"
+  data_entities:
+    - CustomerRecord:
+        id: uuid
+        timestamp: utc
+        source: enum(salesforce, hubspot)
+        behavior_metrics: { usage_score, support_tickets }
+        churn_risk: float
+        upsell_potential: float
+    - Alert:
+        id: uuid
+        customer_id: uuid
+        type: enum(churn, upsell)
+        severity: enum(low, medium, high)
+        action: string
+    - Report:
+        id: uuid
+        type: enum(roi, churn, clv)
+        generated_at: utc
+        metrics: { churn_reduction_pct, clv_increase_pct }
+
+###############################################################################
+# 7 · CRCT AGENT PLAN
+###############################################################################
+crct_plan:
+  root_goal: "Achieve $1M ARR with 200–300 paying customers by May 2026"
+  sub_goals:
+    - id: "discovery_calls"
+      goal: "Conduct 15 discovery interviews with mid-market SaaS CSMs"
+    - id: "mvp_development"
+      goal: "Ship v0.1 with churn prediction and HubSpot integration"
+    - id: "freemium_launch"
+      goal: "Onboard 500 freemium users, convert 20% to paid"
+    - id: "crm_partnerships"
+      goal: "Secure co-marketing deals with Pipedrive and Zoho"
+  constraints:
+    - "MVP budget ≤ $500K engineering costs"
+    - "Team ≤ 5 FTE until seed round"
+    - "MVP launch within 6 months (by Nov 2025)"
+  tools_available:
+    - "Salesforce API"
+    - "HubSpot API"
+    - "AWS (S3, Lambda, RDS)"
+    - "TensorFlow for AI models"
+    - "SendGrid for email campaigns"
+  evaluation_criteria:
+    - "20% freemium-to-paid conversion rate"
+    - "Churn prediction accuracy ≥ 85% in beta tests"
+    - "CAC payback within 12 months"
+
+###############################################################################
+# 8 · AGENT PROMPT EXAMPLES (copy-paste into CRCT)
+###############################################################################
+agent_prompts:
+  discovery_agent: |
+    You are Discovery-Bot. Task: book & summarize calls with mid-market SaaS CSMs.
+    1. Pull prospect list from LinkedIn “SaaS, 50–500 employees, CSM role”.
+    2. Use SendGrid to send personalized invite (template: churn_pain).
+    3. After call, extract top 5 pain-points → store in memory.discoveries.
+    Terminate once 15 calls completed or 20 invites unanswered.
+
+  mvp_builder_agent: |
+    You are MVP-Builder. Input: spec.requirements.functional_mvp[0–3].
+    Steps:
+      1. Develop churn prediction model (TensorFlow, Python).
+      2. Build HubSpot API connector (Node.js).
+      3. Create React dashboard with Tailwind.
+      4. Commit PR; run pytest unit tests.
+      5. Iterate ≤ 3 times if tests fail; else mark done.
+
+  freemium_agent: |
+    You are Freemium-Bot. Goal: onboard 500 freemium users.
+    1. Publish landing page with CTA for 30-day trial.
+    2. Promote via SaaStr community and LinkedIn ads.
+    3. Track sign-ups in memory.users; send onboarding emails via SendGrid.
+    4. Report conversion rate weekly; optimize CTA if <15%.
+
+  partnership_agent: |
+    You are Partnership-Bot. Goal: secure Pipedrive/Zoho co-marketing deals.
+    1. Identify CRM partner managers via LinkedIn.
+    2. Draft pitch deck highlighting mutual benefits (template: crm_partner).
+    3. Schedule demos; store outcomes in memory.partnerships.
+    4. Terminate once 2 LOIs signed or 5 rejections.
+
+###############################################################################
+# 9 · 30-DAY EXECUTION SPRINT (GANTT-LIKE)
+###############################################################################
+timeline_30_day:
+  week1:
+    - "Complete discovery_calls sub_goal"
+    - "Draft MVP architecture in ADR doc"
+  week2:
+    - "Code churn prediction model v0.1"
+    - "Set up AWS infra (S3, Lambda, RDS)"
+  week3:
+    - "Build HubSpot connector and basic dashboard"
+    - "Launch freemium landing page"
+  week4:
+    - "Beta test with 10 discovery call participants"
+    - "Pitch to Pipedrive/Zoho for partnerships"
+    - "Onboard first 100 freemium users"
+
+###############################################################################
+# 10 · RISK REGISTER
+###############################################################################
+risks:
+  - id: "crm_native_competition"
+    desc: "CRM platforms enhance native analytics, reducing need for ChurnBuster"
+    mitigation: "Focus on predictive AI (85%+ accuracy) and automated playbooks; offer 90-day ROI guarantee"
+  - id: "data_quality"
+    desc: "Messy CRM data reduces AI prediction accuracy"
+    mitigation: "Include data cleansing tools; provide guided onboarding"
+  - id: "budget_constraints"
+    desc: "Mid-market SaaS hesitate due to 2025 economic uncertainty"
+    mitigation: "Offer freemium trial and low-cost entry plan ($500/month)"
+
+###############################################################################
+# 11 · METRICS / KPIs
+###############################################################################
+metrics:
+  product:
+    - "churn_prediction_accuracy_pct"
+    - "api_response_latency_ms"
+  business:
+    - "freemium_signups"
+    - "paid_customers"
+    - "ARR"
+  growth:
+    - "website_conversion_rate_pct"
+    - "weekly_active_users"
+
+###############################################################################
+# 12 · OPTIONAL GO-TO-MARKET PLAYBOOK
+###############################################################################
+gtm:
+  land:
+    offer: "30-day freemium trial with Basic Plan features ($500/month value)"
+    channel: "LinkedIn outbound to CSMs, SaaStr community posts"
+  expand:
+    tactic: "Upsell Pro Plan ($2,000/month) to high-usage freemium users"
+  marketing:
+    - "Publish ‘SaaS Churn Reduction Guide’ whitepaper, gated by email"
+    - "Host webinar with SaaStr on mid-market churn strategies"
+  investor_pitch:
+    narrative: |
+      Churn is the silent killer of SaaS growth. ChurnBuster is the affordable,
+      AI-driven solution for mid-market SaaS, capturing a $31B market with
+      plug-and-play simplicity.
+
+###############################################################################
+# 13 · END-OF-FILE
+###############################################################################
