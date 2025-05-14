@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CustomerRecord",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "source": { "type": "string", "enum": ["salesforce", "hubspot"] },
+    "usage_score": { "type": "number" },
+    "support_tickets": { "type": "integer" },
+    "churn_risk": { "type": ["number", "null"] },
+    "upsell_potential": { "type": ["number", "null"] }
+  },
+  "required": ["id", "timestamp", "source", "usage_score", "support_tickets"]
+}
