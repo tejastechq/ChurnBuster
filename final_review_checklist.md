@@ -21,7 +21,7 @@
 | Source Key | Target Key | Dependency Type | Justification |
 |------------|------------|-----------------|---------------|
 <!-- ADDED_DEPENDENCIES_TABLE_START -->
-| [ITEM_1_KEY] | [ITEM_2_KEY]  | [DEP_TYPE]      | [JUSTIFICATION] |
+| 1B         | 1A1        |        d        | [JUSTIFICATION] |
 <!-- ADDED_DEPENDENCIES_TABLE_END -->
 
 ## 4. Documentation Coverage Metrics
