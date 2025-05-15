@@ -63,7 +63,7 @@ For more detailed project planning and status, please refer to `cline_docs/syste
 
 ## Project Structure (High-Level)
 The ChurnBuster application components are planned to be organized within the `src/` directory. The overall workspace also includes the CRCT development framework:
-'''
+```
 ChurnBuster/
 ├───src/
 │   ├───ai_predictor/       # (Planned) Python, TensorFlow ML models
@@ -79,7 +79,7 @@ ChurnBuster/
 ├───README.md                 # This file
 ├───requirements.txt          # Top-level Python dependencies (e.g., for CRCT utilities or shared project libs)
 └───... (other configuration files, e.g., Dockerfile, .env.example)
-'''
+```
 *Note: The `cline_docs`, `cline_utils`, and `.clinerules` are part of the CRCT development framework used to build and manage the ChurnBuster project.*
 
 ## Future Plans
