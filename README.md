@@ -1,165 +1,94 @@
-# Cline Recursive Chain-of-Thought System (CRCT) - v7.8
+# ChurnBuster
 
-Welcome to the **Cline Recursive Chain-of-Thought System (CRCT)**, a framework designed to manage context, dependencies, and tasks in large-scale Cline projects within VS Code. Built for the Cline extension, CRCT leverages a recursive, file-based approach with a modular dependency tracking system to maintain project state and efficiency as complexity increases.
-
-- Version **v7.8**: Introduces dependency visualization, overhauls the Strategy phase for iterative roadmap planning, and refines Hierarchical Design Token Architecture (HDTA) templates.
-    - **Dependency Visualization (`visualize-dependencies`)**:
-        - Added a new command to generate Mermaid diagrams visualizing project dependencies.
-        - Supports project overview, module-focused (internal + interface), and multi-key focused views.
-        - Auto-generates overview and module diagrams during `analyze-project` (configurable).
-        - Diagrams saved by default to `<memory_dir>/dependency_diagrams/`.
-    - **Strategy Phase Overhaul (`strategy_plugin.md`):**
-        - Replaced monolithic planning with an **iterative, area-based workflow** focused on minimal context loading, making it more robust for LLM execution.
-        - Clarified primary objective as **hierarchical project roadmap construction and maintenance** using HDTA.
-        - Integrated instructions for leveraging dependency diagrams (auto-generated or on-demand) to aid analysis.
-        - Refined state management (`.clinerules` vs. `activeContext.md`).
-    - **HDTA Template Updates**:
-        - Reworked `implementation_plan_template.md` for objective/feature focus.
-        - Added clarifying instructions to `module_template.md` and `task_template.md`.
-        - Created new `roadmap_summary_template.md` for unified cycle plans.
-- Version **v7.7**: Restructured core prompt/plugins, introduced `cleanup_consolidation_plugin.md` phase (use with caution due to file operations), added `hdta_review_progress` and `hierarchical_task_checklist` templates.
-- Version **v7.5**: Significant baseline restructuring, establishing core architecture, Contextual Keys (`KeyInfo`), Hierarchical Dependency Aggregation, enhanced `show-dependencies`, configurable embedding device, file exclusion patterns, improved caching & batch processing.
-
----
+## Core Objective
+ChurnBuster is a SaaS platform designed for mid-market SaaS companies to predict churn, identify upsell opportunities, and automate retention strategies. It leverages AI-driven insights and integrates seamlessly with popular CRMs like Salesforce and HubSpot.
 
 ## Key Features
+- **AI-Powered Predictions**: Utilizes machine learning models (built with Python and TensorFlow) to accurately forecast customer churn and identify potential upsell opportunities.
+- **CRM Integration**: Connects with Salesforce and HubSpot via a Node.js-based API layer for efficient data ingestion and synchronization.
+- **Automated Alerting**: An intelligent Alert Engine triggers notifications via Slack and email based on AI-generated insights and predefined rules.
+- **Interactive Dashboard**: A user-friendly interface (built with React and Tailwind CSS) provides real-time metrics, customer insights, and actionable playbooks. *(Currently under development, with React/Tailwind setup and a static placeholder UI present).*
+- **Automated ROI Reporting**: Generates comprehensive PDF reports detailing Return on Investment, leveraging a CRCT agent and LaTeX for professional document formatting.
 
-- **Recursive Decomposition**: Breaks tasks into manageable subtasks, organized via directories and files for isolated context management.
-- **Minimal Context Loading**: Loads only essential data, expanding via dependency trackers as needed.
-- **Persistent State**: Uses the VS Code file system to store context, instructions, outputs, and dependencies. State integrity is rigorously maintained via a **Mandatory Update Protocol (MUP)** applied after actions and periodically during operation.
-- **Modular Dependency System**: Fully modularized dependency tracking system.
-- **Contextual Keys**: Introduces `KeyInfo` for context-rich keys, enabling more accurate and hierarchical dependency tracking.
-- **Hierarchical Dependency Aggregation**: Implements hierarchical rollup and foreign dependency aggregation for the main tracker, providing a more comprehensive view of project dependencies.
-- **Enhanced Dependency Workflow**: A refined workflow simplifies dependency management.
-    - `show-keys` identifies keys needing attention ('p', 's', 'S') within a specific tracker.
-    - `show-dependencies` aggregates dependency details (inbound/outbound, paths) from *all* trackers for a specific key, eliminating manual tracker deciphering.
-    - `add-dependency` resolves placeholder ('p') or suggested ('s', 'S') relationships identified via this process. **Crucially, when targeting a mini-tracker (`*_module.md`), `add-dependency` now allows specifying a `--target-key` that doesn't exist locally, provided the target key is valid globally (known from `analyze-project`). The system automatically adds the foreign key definition and updates the grid, enabling manual linking to external dependencies.**
-      *   **Tip:** This is especially useful for manually linking relevant documentation files (e.g., requirements, design specs, API descriptions) to code files within a mini-tracker, even if the code file is incomplete or doesn't trigger an automatic suggestion. This provides the LLM with crucial context during code generation or modification tasks, guiding it towards the intended functionality described in the documentation (`doc_key < code_key`).
-   - **Dependency Visualization (`visualize-dependencies`)**: **(NEW in v7.8)**
-    - Generates Mermaid diagrams for project overview, module scope (internal + interface), or specific key focus.
-    - Auto-generates overview/module diagrams via `analyze-project`.
-- **Iterative Strategy Phase**: **(NEW in v7.8)**
-    - Plans the project roadmap iteratively, focusing on one area (module/feature) at a time.
-    - Explicitly integrates dependency analysis (textual + visual) into planning.
-- **Refined HDTA Templates**: **(NEW in v7.8)**
-    - Improved templates for Implementation Plans, Modules, and Tasks.
-    - New template for Roadmap Summaries.
-- **Configurable Embedding Device**: Allows users to configure the embedding device (`cpu`, `cuda`, `mps`) via `.clinerules.config.json` for optimized performance on different hardware. (Note: *the system does not yet install the requirements for cuda or mps automatically, please install the requirements manually or with the help of the LLM.*)
-- **File Exclusion Patterns**: Users can now define file exclusion patterns in `.clinerules.config.json` to customize project analysis.
-- **Caching and Batch Processing**: Significantly improves performance.
-- **Modular Dependency Tracking**:
-    - Utilizes main trackers (`module_relationship_tracker.md`, `doc_tracker.md`) and module-specific mini-trackers (`{module_name}_module.md`).
-    - Mini-tracker files also serve as the HDTA Domain Module documentation for their respective modules.
-    - Employs hierarchical keys and RLE compression for efficiency.
-- **Automated Operations**: System operations are now largely automated and condensed into single commands, streamlining workflows and reducing manual command execution.
-- **Phase-Based Workflow**: Operates in distinct phases: Set-up/Maintenance -> Strategy -> Execution -> Cleanup/Consolidation, controlled by `.clinerules`.
-- **Chain-of-Thought Reasoning**: Ensures transparency with step-by-step reasoning and reflection.
+## Modules
+The ChurnBuster platform is composed of the following main modules:
+1.  **AI Predictor**: Handles all machine learning predictions.
+2.  **CRM Connector**: Manages data flow between ChurnBuster and external CRMs.
+3.  **Alert Engine**: Responsible for generating and dispatching alerts.
+4.  **Dashboard App**: The primary user interface for interacting with the platform.
+5.  **Report Generator**: Creates automated reports.
 
----
+## Technology Stack
+- **Backend & AI**: Python, TensorFlow, Node.js
+- **Frontend**: React, Tailwind CSS
+- **Reporting**: LaTeX
+- **Development Framework**: This project utilizes the Cline Recursive Chain-of-Thought System (CRCT) for development and task management.
 
-## Quickstart
+## Current Status
+The core modules for ChurnBuster have been delivered for MVP (Minimum Viable Product) as of May 14, 2025. This includes the AI Predictor, CRM Connector, Alert Engine, and Report Generator, along with their dependencies, integrations, and documentation verified as complete.
 
-1. **Clone the Repo**:
-   ```bash
-   git clone https://github.com/RPG-fan/Cline-Recursive-Chain-of-Thought-System-CRCT-.git
-   cd Cline-Recursive-Chain-of-Thought-System-CRCT-
-   ```
+The **Dashboard App** is currently partially implemented. The React/Tailwind setup and a static placeholder UI are in place. Full implementation of the dashboard is the next major development focus.
 
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+For more detailed project planning and status, please refer to `cline_docs/system_manifest.md` and other documents within the `cline_docs` directory.
 
-3. **Set Up Cline Extension**:
-   - Open the project in VS Code with the Cline extension installed.
-   - Copy `cline_docs/prompts/core_prompt(put this in Custom Instructions).md` into the Cline Custom Instructions field.
+## Getting Started
+(This section will be populated with specific setup, build, and run instructions as the ChurnBuster application components are further developed and integrated.)
 
-4. **Start the System**:
-   - Type `Start.` in the Cline input to initialize the system.
-   - The LLM will bootstrap from `.clinerules`, creating missing files and guiding you through setup if needed.
+1.  **Prerequisites**:
+    *   Node.js (for CRM Connector, Dashboard App)
+    *   Python (for AI Predictor)
+    *   LaTeX (for Report Generator)
+    *   Access to Salesforce/HubSpot developer accounts (for CRM integration)
+2.  **Installation**:
+    ```bash
+    # Clone the repository
+    git clone <repository_url>
+    cd ChurnBuster
 
-*Note*: The Cline extension’s LLM automates most commands and updates to `cline_docs/`. Minimal user intervention is required (in theory!).
+    # Example installation steps for modules:
+    # For the Dashboard App (if frontend dependencies are managed within its directory)
+    # cd src/dashboard_app 
+    # npm install
 
----
+    # For the AI Predictor (if it has its own requirements.txt)
+    # cd src/ai_predictor
+    # pip install -r requirements.txt
+    ```
+3.  **Configuration**:
+    *   Set up API keys and credentials for Salesforce, HubSpot, Slack, and email services in a secure manner (e.g., using environment variables or a configuration file not committed to the repository).
+    *   Configure database connections if applicable.
+    *   (Detailed configuration steps will be added as modules are finalized.)
+4.  **Running the Application**:
+    *   (Instructions for starting backend services, the frontend development server, and any other necessary processes will be provided here.)
 
-## Project Structure
+## Project Structure (High-Level)
+The ChurnBuster application components are planned to be organized within the `src/` directory. The overall workspace also includes the CRCT development framework:
+'''
+ChurnBuster/
+├───src/
+│   ├───ai_predictor/       # (Planned) Python, TensorFlow ML models
+│   ├───crm_connector/      # (Planned) Node.js API for CRM integration
+│   ├───alert_engine/       # (Planned) Logic for alerts
+│   ├───dashboard_app/      # React + Tailwind UI (partially implemented, see existing directory)
+│   └───report_generator/   # (Planned) LaTeX and CRCT agent for reports
+├───docs/                     # Project-specific documentation (API designs, user guides, etc.)
+├───cline_docs/               # CRCT System: Operational memory, prompts, templates for project management
+├───cline_utils/              # CRCT System: Utility scripts for dependency management
+├───.clinerules               # CRCT System: Configuration file
+├───.gitignore
+├───README.md                 # This file
+├───requirements.txt          # Top-level Python dependencies (e.g., for CRCT utilities or shared project libs)
+└───... (other configuration files, e.g., Dockerfile, .env.example)
+'''
+*Note: The `cline_docs`, `cline_utils`, and `.clinerules` are part of the CRCT development framework used to build and manage the ChurnBuster project.*
 
-```
-Cline-Recursive-Chain-of-Thought-System-CRCT-/
-│   .clinerules
-│   .clinerules.config.json       # Configuration for dependency system
-│   .gitignore
-│   INSTRUCTIONS.md
-│   LICENSE
-│   README.md
-│   requirements.txt
-│
-├───cline_docs/                   # Operational memory
-│   │  activeContext.md           # Current state and priorities
-│   │  changelog.md               # Logs significant changes
-│   │  userProfile.md             # User profile and preferences
-│   │  progress.md                # High-level project checklist
-│   │
-│   ├──backups/                   # Backups of tracker files
-│   ├──dependency_diagrams/       # Default location for auto-generated Mermaid diagrams <NEW>
-│   ├──prompts/                   # System prompts and plugins
-│   │    core_prompt.md           # Core system instructions
-|   |    cleanup_consolidation_plugin.md <NEWer>
-│   │    execution_plugin.md
-│   │    setup_maintenance_plugin.md
-│   │    strategy_plugin.md         <REVISED>
-│   ├──templates/                 # Templates for HDTA documents
-│   │    hdta_review_progress_template.md <NEWer>
-│   │    hierarchical_task_checklist_template.md <NEWer>
-│   │    implementation_plan_template.md <REVISED>
-│   │    module_template.md         <Minor Update>
-│   │    roadmap_summary_template.md  <NEW>
-│   │    system_manifest_template.md
-│   │    task_template.md           <Minor Update>
-│
-├───cline_utils/                  # Utility scripts
-│   └─dependency_system/
-│     │ dependency_processor.py   # Dependency management script <REVISED>
-│     ├──analysis/                # Analysis modules <REVISED project_analyzer.py>
-│     ├──core/                    # Core modules <REVISED key_manager.py>
-│     ├──io/                      # IO modules
-│     └──utils/                   # Utility modules <REVISED config_manager.py>, <NEW visualize_dependencies.py>
-│
-├───docs/                         # Project documentation
-└───src/                          # Source code root
-
-```
-*(Added/Updated relevant files/dirs)*
+## Future Plans
+- Complete the full implementation of the interactive Dashboard App, including dynamic data visualization and playbook integration.
+- Continuously refine and improve the accuracy of the AI prediction models.
+- Expand the capabilities of the Alert Engine with more sophisticated rule configurations.
+- Develop additional automated playbooks for customer retention and upsell strategies.
+- Enhance the Report Generator with more customizable report templates.
 
 ---
 
-## Current Status & Future Plans
-
-- **v7.8**: Focus on **visual comprehension and planning robustness**. Introduced Mermaid dependency diagrams (`visualize-dependencies`, auto-generation via `analyze-project`). Overhauled the Strategy phase (`strategy_plugin.md`) for iterative, area-based roadmap planning, explicitly using visualizations. Refined HDTA templates, including a new `roadmap_summary_template.md`.
-- **v7.7**: Introduced `cleanup_consolidation` phase, added planning/review tracker templates.
-- **v7.5**: Foundational restructure: Contextual Keys, Hierarchical Aggregation, `show-dependencies`, configuration enhancements, performance improvements (cache/batch).
-
-**Future Focus**: Continue refining performance, usability, and robustness. Areas include improving error handling in file operations (Cleanup), and further optimizing LLM interaction within each phase based on usage patterns. The remainder of the v7.x series will mainly be improving how embeddings, analysis, and similarity suggestions are handled. These releases might come a bit slower than previous areas due to the amount of research and testing needed to genuinely improve upon the current analysis/suggestion system.
-- *tentative* v8.x will be focused on transition to MCP based tool use, with later stages planned to move from filesystem storage/operations to database focused operation.
-
-Feedback is welcome! Please report bugs or suggestions via GitHub Issues.
-
----
-
-## Getting Started (Optional - Existing Projects)
-
-To test on an existing project:
-1. Copy your project into `src/`.
-2. Use these prompts to kickstart the LLM:
-   - `Perform initial setup and populate dependency trackers.`
-   - `Review the current state and suggest next steps.`
-
-The system will analyze your codebase, initialize trackers, and guide you forward.
-
----
-
-## Thanks!
-
-A big Thanks to https://github.com/biaomingzhong for providing detailed instructions that were integrated into the core prompt and plugins! (PR #25)
-
-This is a labor of love to make Cline projects more manageable. I’d love to hear your thoughts—try it out and let me know what works (or doesn’t)!
+This README now reflects the ChurnBuster project. If you have specific details for the "Getting Started" section or want adjustments to the "Project Structure", let me know!
