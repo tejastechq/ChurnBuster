@@ -11,14 +11,14 @@ Key Definitions:
 ---KEY_DEFINITIONS_END---
 
 last_KEY_edit: Assigned keys: 1B, 1Ba, 2A, 2B, 2Ba, 2Bb, 2Bc, 2Bd
-last_GRID_edit: Grid content updated (2025-05-14T20:56:49.761805)
+last_GRID_edit: Grid structure updated (2025-05-14T20:42:35.954175)
 
 ---GRID_START---
 X 1B 1Ba 2A 2B 2Ba 2Bb 2Bc 2Bd
-1B = oxp6
-1Ba = xoxxp4
-2A = pxo<p4
-2B = px>op4
+1B = op7
+1Ba = pop6
+2A = ppop5
+2B = p3op4
 2Ba = p4op3
 2Bb = p5opp
 2Bc = p6op

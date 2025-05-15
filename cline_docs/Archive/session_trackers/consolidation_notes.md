@@ -16,6 +16,9 @@
 - UI/UX, React setup, core UI, AI Predictor/Alert Engine integration, playbook management, authentication, and documentation are all complete and verified.
 - Key learning: Early wireframing and stakeholder feedback improved usability and reduced rework.
 - Noted: Modular UI components and clear API contracts enabled smooth integration.
+- Batch 1, dashboard_app_task_03_core_ui.md: Static UI implementation for Playbooks, Alerts, and Settings pages is complete.
+- Batch 1, dashboard_app_task_04_api_integration.md: API integration tasks for defining endpoints, data mapping, state management, API client setup, and Overview data integration are complete. Integration for Metrics, Playbooks, Alerts, Authentication, and Testing/Debugging are pending.
+- Batch 1, dashboard_app_implementation_plan.md: Core UI implementation is complete, API integration is the next focus and remains incomplete.
 
 ### Alert Engine Module
 - Alert criteria, Slack/email integration, AI Predictor/dashboard integration, and documentation are all complete and verified.

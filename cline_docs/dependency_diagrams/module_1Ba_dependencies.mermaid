@@ -8,22 +8,6 @@ flowchart TB
   %% -- Nodes and Subgraphs --
   subgraph sg_1B ["1B<br>src"]
     style sg_1B fill:#282828,stroke:#39FF14,stroke-width:4px
-    1B1["1B1<br>ai_predictor_implementation_plan.md"]
-    class 1B1 file
-    1B12["1B12<br>alert_engine_implementation_plan.md"]
-    class 1B12 file
-    1B20["1B20<br>crm_connector_implementation_plan.md"]
-    class 1B20 file
-    1B28["1B28<br>dashboard_app_implementation_plan.md"]
-    class 1B28 file
-    1B29["1B29<br>dashboard_app_task_01_ui_ux.md"]
-    class 1B29 file
-    1B31["1B31<br>dashboard_app_task_02_wireframes.md"]
-    class 1B31 file
-    1B32["1B32<br>dashboard_app_task_03_core_ui.md"]
-    class 1B32 file
-    1B42["1B42<br>report_generator_implementation_plan.md"]
-    class 1B42 file
     subgraph sg_1Ba ["1Ba<br>dashboard_app"]
       style sg_1Ba fill:#282828,stroke:#39FF14,stroke-width:4px
       1Ba2["1Ba2<br>dashboard_app_implementation_plan.md"]
@@ -52,13 +36,6 @@ flowchart TB
   %% -- Fallback Node Definitions --
 
   %% -- Dependencies --
-  1B1 -->|"relies on"| 1B12
-  1B1 -->|"relies on"| 1B20
-  1B1 -->|"relies on"| 1B28
-  1B1 -->|"relies on"| 1B42
-  1B28 -.->|"docs"| 1B29
-  1B28 -.->|"docs"| 1B31
-  1B28 -.->|"docs"| 1B32
   1Ba2 -->|"relies on"| 1Ba3
   1Ba2 -->|"relies on"| 1Ba4
   1Ba2 -->|"relies on"| 1Ba5
