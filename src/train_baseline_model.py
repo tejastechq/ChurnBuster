@@ -12,8 +12,9 @@ df = pd.read_csv('preprocessed_sample_data.csv')
 df['churn_label'] = df['churn_label'].astype(str).str.lower().map({'true': 1, 'false': 0, '1': 1, '0': 0}).astype(int)
 
 
-# Features and target (use updated column names)
-X = df[['behavior_metrics_usage_score', 'behavior_metrics_support_tickets']].values
+
+# Features and target (use correct column names from preprocessed_sample_data.csv)
+X = df[['usage_score', 'support_tickets']].values
 y = df['churn_label'].values
 
 # Train/test split

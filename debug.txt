@@ -1,94 +1,49 @@
-2025-05-14 12:40:34,906 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: path_normalization with TTL 600s
-2025-05-14 12:40:34,906 - __main__ - INFO - Attempting to add dependency: 1B -> ['1A1'] (d) in tracker c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/src_module.md
-2025-05-14 12:40:34,906 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: tracker_data with TTL 600s
-2025-05-14 12:40:34,908 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'src_module.md': 2 keys, 2 grid rows
-2025-05-14 12:40:34,908 - __main__ - INFO - Loading global key map...
-2025-05-14 12:40:34,908 - cline_utils.dependency_system.core.key_manager - INFO - Successfully loaded global key map (3 entries) from: c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_utils/dependency_system/core/global_key_map.json
-2025-05-14 12:40:34,908 - __main__ - INFO - Global key map loaded successfully.
-2025-05-14 12:40:34,908 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: project_root with TTL 600s
-2025-05-14 12:40:34,908 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: code_roots with TTL 600s
-2025-05-14 12:40:34,908 - cline_utils.dependency_system.utils.config_manager - DEBUG - Found and sorted code roots: ['c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src']
-2025-05-14 12:40:34,908 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: doc_dirs with TTL 600s
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.utils.config_manager - DEBUG - Found and sorted doc dirs: ['c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs']
-2025-05-14 12:40:34,909 - __main__ - INFO - Identified code-doc link for checklist: 1B (code) -> 1A1 (doc)
-2025-05-14 12:40:34,909 - __main__ - DEBUG - Target '1A1' found locally. Queued for internal update.
-2025-05-14 12:40:34,909 - __main__ - INFO - Calling update_tracker for c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/src_module.md (Force Apply: True)
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.io.tracker_io - DEBUG - Mini Tracker (1B): Initial relevant keys (internal): 1
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.io.tracker_io - DEBUG - Scanning existing grid of 'src_module.md' for relevant foreign keys (File-File links only)...
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: grid_decompress with TTL 600s
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.io.tracker_io - DEBUG -  Skipping link (1B, 1A1): Not a file-file relationship.
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.io.tracker_io - DEBUG - Mini Tracker (1B): Relevant keys after scanning existing grid: 1
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: excluded_dirs with TTL 600s
-2025-05-14 12:40:34,909 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: config_data with TTL 600s
-2025-05-14 12:40:34,910 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: excluded_paths with TTL 600s
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - DEBUG - Processing incoming suggestions to augment relevant keys...
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - DEBUG -   Adding suggested foreign key '1A1' linked from internal '1B'
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - DEBUG - Mini Tracker (1B): Relevant keys after processing suggestions: 2
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - DEBUG - Validating 2 relevant keys against provided path_to_key_info map...
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - INFO - Mini tracker update for module 1B (src). Grid keys: 2.
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - DEBUG - Filtering mini-tracker suggestions against final valid keys (src_module.md)...
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.io.tracker_io - DEBUG - Mini filter: Adding suggestion 1B -> 1A1 ('d')
-2025-05-14 12:40:34,915 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: metadata with TTL 600s
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - DEBUG - Read existing tracker src_module.md: 2 keys, 2 grid rows.
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.core.key_manager - WARNING - Previous global key map file not found: c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_utils/dependency_system/core/global_key_map_old.json. This may be the first run.
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - INFO - Building path migration map based on global key maps...
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - WARNING - Old global map not provided or loaded. Path stability relies only on new map.
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - DEBUG - New global map: Found 3 unique paths.
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - INFO - Path comparison: Stable=3, Removed=0, Added=0
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - INFO - Path migration map built with 3 total path entries.
-2025-05-14 12:40:34,916 - cline_utils.dependency_system.io.tracker_io - DEBUG - Updating tracker: c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/src_module.md
-2025-05-14 12:40:34,917 - cline_utils.dependency_system.io.tracker_io - INFO - Backed up tracker 'src_module.md' to: src_module.md.20250514_124034_916818.bak
-2025-05-14 12:40:34,919 - cline_utils.dependency_system.io.tracker_io - DEBUG - Cleaning up 1 older backups for 'src_module.md'.
-2025-05-14 12:40:34,919 - cline_utils.dependency_system.io.tracker_io - INFO - Copying old grid values (using path migration map)...
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG -   Grid Copy Processing Stable Row: Path 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs/churnbuster_spec.yaml' (OldKeyFromFile: '1A1') -> NewKey '1A1' (Idx 0)
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG -   Grid Copy Processing Stable Row: Path 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src' (OldKeyFromFile: '1B') -> NewKey '1B' (Idx 1)
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG -   Grid Copy OK: Copied 'd' from stable paths ('c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src','c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs/churnbuster_spec.yaml') -> ('1B','1A1') at index (1,0)
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - INFO - Finished copying old grid values. Copied: 1, Skipped (Unstable/Removed Path): 0, Skipped (Target Filled): 0, RowErrors=0
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG - Calculating structural dependencies for mini tracker...
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG - Applying structural dependency rules to grid...
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG - Applied 0 structural rules to placeholder cells.
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG - Mini Tracker (1B): Importing established relationships (Path Based)...
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG - Checking 1 native against 1 foreign paths.
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: tracker_paths with TTL 600s
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'doc_tracker.md': 2 keys, 2 grid rows
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - DEBUG - Applying 1 suggestions to grid for c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/src_module.md (Force Apply: True)
-2025-05-14 12:40:34,920 - cline_utils.dependency_system.io.tracker_io - INFO - Consolidating grid for 'src_module.md' against global highest-priority relationships...
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Path Components: project_root='c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-', memory_dir_rel='c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs', calculated memory_dir_abs='c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs'
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Using main_tracker_abs from config (or default): 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs/module_relationship_tracker.md'
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Using doc_tracker_abs from config (or default): 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs/doc_tracker.md'
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Found 6 mini trackers under 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src'.
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - INFO - Found 8 total tracker files.
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: aggregation with TTL 300s
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - INFO - Aggregating dependencies from 8 trackers using path migration map...
-2025-05-14 12:40:34,921 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: src_module.md
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Aggregation for src_module.md: Skipped 2 cells/rows due to unstable/removed paths.
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: doc_tracker.md
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Aggregation for doc_tracker.md: Skipped 2 cells/rows due to unstable/removed paths.
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: report_generator_module.md
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'report_generator_module.md': 0 keys, 0 grid rows
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: report_generator_module.md
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: dashboard_app_module.md
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'dashboard_app_module.md': 0 keys, 0 grid rows
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: dashboard_app_module.md
-2025-05-14 12:40:34,922 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: crm_connector_module.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'crm_connector_module.md': 0 keys, 0 grid rows
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: crm_connector_module.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: alert_engine_module.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'alert_engine_module.md': 0 keys, 0 grid rows
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: alert_engine_module.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: ai_predictor_module.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'ai_predictor_module.md': 0 keys, 0 grid rows
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: ai_predictor_module.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: module_relationship_tracker.md
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'module_relationship_tracker.md': 1 keys, 1 grid rows
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Aggregation for module_relationship_tracker.md: Skipped 1 cells/rows due to unstable/removed paths.
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.utils.tracker_utils - INFO - Aggregation complete. Processed 3 trackers. Found 0 unique directed links (based on current keys for stable paths).
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.io.tracker_io - DEBUG - Retrieved 0 globally authoritative relationships for consolidation.
-2025-05-14 12:40:34,923 - cline_utils.dependency_system.io.tracker_io - DEBUG - No consolidation changes needed based on global relationships.
-2025-05-14 12:40:34,924 - cline_utils.dependency_system.io.tracker_io - DEBUG - Keeping existing last_GRID_edit message: Manual dependency update 1B -> ['1A1'] (d) (2025-05-14T12:32:23.260747)
-2025-05-14 12:40:34,924 - cline_utils.dependency_system.io.tracker_io - WARNING - Mini markers invalid in c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/src_module.md: . Overwriting.
-2025-05-14 12:40:34,924 - cline_utils.dependency_system.io.tracker_io - INFO - Successfully updated tracker: c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/src_module.md
-2025-05-14 12:40:34,924 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: grid_validation with TTL 600s
-2025-05-14 12:40:34,924 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: grid_dependencies with TTL 600s
-2025-05-14 12:40:34,924 - __main__ - INFO - Attempting to update checklist with 1 code-doc dependencies.
-2025-05-14 12:40:34,924 - cline_utils.dependency_system.utils.template_generator - INFO - Duplicate dependency entry found in checklist, not adding: | 1B         | 1A1        |        d        | [JUSTIFICATION] |
+2025-05-14 16:38:08,707 - __main__ - INFO - Showing dependencies for key string: 1B28
+2025-05-14 16:38:08,708 - __main__ - INFO - Loading global key map...
+2025-05-14 16:38:08,708 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: path_normalization with TTL 600s
+2025-05-14 16:38:08,708 - cline_utils.dependency_system.core.key_manager - INFO - Successfully loaded global key map (54 entries) from: c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_utils/dependency_system/core/global_key_map.json
+2025-05-14 16:38:08,708 - __main__ - INFO - Global key map loaded successfully.
+2025-05-14 16:38:08,708 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: project_root with TTL 600s
+2025-05-14 16:38:08,708 - __main__ - DEBUG - Building path migration map for show-dependencies...
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.core.key_manager - INFO - Loaded previous global key map (3 entries) from: c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_utils/dependency_system/core/global_key_map_old.json
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.io.tracker_io - INFO - Building path migration map based on global key maps...
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.io.tracker_io - DEBUG - Old global map: Found 3 unique paths.
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.io.tracker_io - DEBUG - New global map: Found 54 unique paths.
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.io.tracker_io - INFO - Path comparison: Stable=3, Removed=0, Added=51
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.io.tracker_io - INFO - Path migration map built with 54 total path entries.
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: config_data with TTL 600s
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Path Components: project_root='c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-', memory_dir_rel='c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs', calculated memory_dir_abs='c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs'
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Using main_tracker_abs from config (or default): 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs/module_relationship_tracker.md'
+2025-05-14 16:38:08,709 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Using doc_tracker_abs from config (or default): 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/cline_docs/doc_tracker.md'
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: code_roots with TTL 600s
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.config_manager - DEBUG - Found and sorted code roots: ['c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src']
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Found 6 mini trackers under 'c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src'.
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.tracker_utils - INFO - Found 8 total tracker files.
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: aggregation with TTL 300s
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.tracker_utils - INFO - Aggregating dependencies from 8 trackers using path migration map...
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: ai_predictor_module.md
+2025-05-14 16:38:08,710 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: tracker_data with TTL 600s
+2025-05-14 16:38:08,711 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'ai_predictor_module.md': 0 keys, 0 grid rows
+2025-05-14 16:38:08,711 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: ai_predictor_module.md
+2025-05-14 16:38:08,711 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: alert_engine_module.md
+2025-05-14 16:38:08,711 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'alert_engine_module.md': 0 keys, 0 grid rows
+2025-05-14 16:38:08,711 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: alert_engine_module.md
+2025-05-14 16:38:08,711 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: src_module.md
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'src_module.md': 52 keys, 52 grid rows
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.cache_manager - DEBUG - Spun up new cache: grid_decompress with TTL 600s
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Aggregation for src_module.md: Skipped 102 cells/rows due to unstable/removed paths.
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: crm_connector_module.md
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'crm_connector_module.md': 0 keys, 0 grid rows
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: crm_connector_module.md
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: dashboard_app_module.md
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'dashboard_app_module.md': 0 keys, 0 grid rows
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: dashboard_app_module.md
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: module_relationship_tracker.md
+2025-05-14 16:38:08,712 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'module_relationship_tracker.md': 1 keys, 1 grid rows
+2025-05-14 16:38:08,713 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: report_generator_module.md
+2025-05-14 16:38:08,713 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'report_generator_module.md': 0 keys, 0 grid rows
+2025-05-14 16:38:08,713 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Skipping empty tracker or missing keys/grid: report_generator_module.md
+2025-05-14 16:38:08,713 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Processing tracker for aggregation: doc_tracker.md
+2025-05-14 16:38:08,713 - cline_utils.dependency_system.utils.tracker_utils - DEBUG - Read tracker 'doc_tracker.md': 2 keys, 2 grid rows
+2025-05-14 16:38:08,713 - cline_utils.dependency_system.utils.tracker_utils - INFO - Aggregation complete. Processed 3 trackers. Found 2 unique directed links (based on current keys for stable paths).
+2025-05-14 16:38:08,713 - __main__ - DEBUG - Filtering aggregated links for target key display: 1B28

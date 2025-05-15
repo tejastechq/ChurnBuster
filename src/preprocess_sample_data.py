@@ -23,9 +23,9 @@ def validate_row(row, schema):
             errors.append(f"Missing required field: {field}")
     # Type checks (simplified)
     try:
-        uuid.UUID(str(row['id']))
+        uuid.UUID(str(row['customer_id']))
     except Exception:
-        errors.append("Invalid UUID for id")
+        errors.append("Invalid UUID for customer_id")
     try:
         datetime.fromisoformat(row['timestamp'].replace('Z','+00:00'))
     except Exception:
@@ -50,13 +50,14 @@ def preprocess():
     processed = []
     for idx, row in df.iterrows():
         row_dict = {
-            'id': row['id'],
-            'timestamp': row['timestamp'],
-            'source': row['source'],
+            'customer_id': row['customer_id'],
+            'timestamp': row.get('timestamp', ''),
+            'source': row.get('source', ''),
             'usage_score': row['usage_score'],
             'support_tickets': row['support_tickets'],
             'churn_risk': row.get('churn_risk', ''),
-            'upsell_potential': row.get('upsell_potential', '')
+            'upsell_potential': row.get('upsell_potential', ''),
+            'churn_label': row.get('churn_label', '')
         }
         errors = validate_row(row_dict, schema)
         if errors:

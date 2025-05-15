@@ -1,0 +1,3 @@
+- [x] **Playbooks Page**: Implement static UI for playbook management (list, add, edit options). 
+- [x] **Alerts Page**: Implement static UI for churn risk notifications and actions. 
+- [x] **Settings Page**: Implement static UI for user preferences and account management. 

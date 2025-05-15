@@ -19,7 +19,7 @@ def build_model():
 
 def train_and_get_model():
     df = pd.read_csv('preprocessed_sample_data.csv')
-    X = df[['behavior_metrics_usage_score', 'behavior_metrics_support_tickets']].values
+    X = df[['usage_score', 'support_tickets']].values
     y = df['churn_label'].astype(str).str.lower().map({'true': 1, 'false': 0, '1': 1, '0': 0}).astype(int).values
     model = build_model()
     model.fit(X, y, epochs=30, batch_size=2, verbose=0)
@@ -33,10 +33,10 @@ app = Flask(__name__)
 def predict():
     data = request.get_json()
     try:
-        usage_score = float(data['behavior_metrics_usage_score'])
-        support_tickets = int(data['behavior_metrics_support_tickets'])
+        usage_score = float(data.get('usage_score', data.get('behavior_metrics_usage_score', 0)))
+        support_tickets = int(data.get('support_tickets', data.get('behavior_metrics_support_tickets', 0)))
     except (KeyError, ValueError):
-        return jsonify({'error': 'Invalid input. Required: behavior_metrics_usage_score (float), behavior_metrics_support_tickets (int)'}), 400
+        return jsonify({'error': 'Invalid input. Required: usage_score (float), support_tickets (int)'}), 400
     X = np.array([[usage_score, support_tickets]])
     prob = float(model.predict(X)[0][0])
     prediction = int(prob > 0.5)

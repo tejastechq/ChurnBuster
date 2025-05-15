@@ -1,0 +1,2 @@
+- [x] **Task 03: Core UI Implementation** - Implement static UI for all Dashboard App views (Overview, Metrics, Playbooks, Alerts, Settings).
+- [ ] **Task 04: API Integration** - Integrate with AI Predictor API for dynamic data in all views. *(Next Focus)* 

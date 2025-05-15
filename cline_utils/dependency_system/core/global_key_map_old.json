@@ -1,0 +1,23 @@
+{
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs": {
+    "key_string": "1A",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs",
+    "parent_path": null,
+    "tier": 1,
+    "is_directory": true
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs/churnbuster_spec.yaml": {
+    "key_string": "1A1",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs/churnbuster_spec.yaml",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/docs",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src": {
+    "key_string": "1B",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "parent_path": null,
+    "tier": 1,
+    "is_directory": true
+  }
+}

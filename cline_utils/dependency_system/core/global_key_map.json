@@ -19,5 +19,362 @@
     "parent_path": null,
     "tier": 1,
     "is_directory": true
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_implementation_plan.md": {
+    "key_string": "1B1",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_implementation_plan.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_01_data_schema.md": {
+    "key_string": "1B2",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_01_data_schema.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_02_sample_data.md": {
+    "key_string": "1B3",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_02_sample_data.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_03_baseline_model.md": {
+    "key_string": "1B4",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_03_baseline_model.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_04_model_evaluation.md": {
+    "key_string": "1B5",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_04_model_evaluation.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_05_prediction_api.md": {
+    "key_string": "1B6",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_05_prediction_api.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_06_crm_integration.md": {
+    "key_string": "1B7",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_06_crm_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_07_dashboard_integration.md": {
+    "key_string": "1B8",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_07_dashboard_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_08_alert_engine_integration.md": {
+    "key_string": "1B9",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_08_alert_engine_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_09_documentation.md": {
+    "key_string": "1B10",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/ai_predictor_task_09_documentation.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_api_example.py": {
+    "key_string": "1B11",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_api_example.py",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_implementation_plan.md": {
+    "key_string": "1B12",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_implementation_plan.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_01_criteria.md": {
+    "key_string": "1B13",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_01_criteria.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_02_slack.md": {
+    "key_string": "1B14",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_02_slack.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_03_email.md": {
+    "key_string": "1B15",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_03_email.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_04_ai_predictor_integration.md": {
+    "key_string": "1B16",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_04_ai_predictor_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_05_dashboard_integration.md": {
+    "key_string": "1B17",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_05_dashboard_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_06_documentation.md": {
+    "key_string": "1B18",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/alert_engine_task_06_documentation.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/baseline_model_results.txt": {
+    "key_string": "1B19",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/baseline_model_results.txt",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_implementation_plan.md": {
+    "key_string": "1B20",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_implementation_plan.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_01_research_apis.md": {
+    "key_string": "1B21",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_01_research_apis.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_02_data_extraction.md": {
+    "key_string": "1B22",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_02_data_extraction.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_03_transform_validate.md": {
+    "key_string": "1B23",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_03_transform_validate.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_04_deliver_data.md": {
+    "key_string": "1B24",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_04_deliver_data.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_05_error_handling.md": {
+    "key_string": "1B25",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_05_error_handling.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_06_document_integration.md": {
+    "key_string": "1B26",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/crm_connector_task_06_document_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_api_example.py": {
+    "key_string": "1B27",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_api_example.py",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_implementation_plan.md": {
+    "key_string": "1B28",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_implementation_plan.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_01_ui_ux.md": {
+    "key_string": "1B29",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_01_ui_ux.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_02_setup_project.md": {
+    "key_string": "1B30",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_02_setup_project.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_03_core_ui.md": {
+    "key_string": "1B31",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_03_core_ui.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_04_ai_predictor_integration.md": {
+    "key_string": "1B32",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_04_ai_predictor_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_05_alert_engine_integration.md": {
+    "key_string": "1B33",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_05_alert_engine_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_06_playbook_management.md": {
+    "key_string": "1B34",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_06_playbook_management.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_07_authentication.md": {
+    "key_string": "1B35",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_07_authentication.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_08_documentation.md": {
+    "key_string": "1B36",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/dashboard_app_task_08_documentation.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/data_validation_report.txt": {
+    "key_string": "1B37",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/data_validation_report.txt",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/model_evaluation_report.md": {
+    "key_string": "1B38",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/model_evaluation_report.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/preprocess_sample_data.py": {
+    "key_string": "1B39",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/preprocess_sample_data.py",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/preprocessed_sample_data.csv": {
+    "key_string": "1B40",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/preprocessed_sample_data.csv",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_implementation_plan.md": {
+    "key_string": "1B41",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_implementation_plan.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_01_templates.md": {
+    "key_string": "1B42",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_01_templates.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_02_pdf_generation.md": {
+    "key_string": "1B43",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_02_pdf_generation.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_03_ai_predictor_integration.md": {
+    "key_string": "1B44",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_03_ai_predictor_integration.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_04_api_cli.md": {
+    "key_string": "1B45",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_04_api_cli.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_05_documentation.md": {
+    "key_string": "1B46",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/report_generator_task_05_documentation.md",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/sample_crm_data.csv": {
+    "key_string": "1B47",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/sample_crm_data.csv",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/sample_crm_data_schema.json": {
+    "key_string": "1B48",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/sample_crm_data_schema.json",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/serve_model_api.py": {
+    "key_string": "1B49",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/serve_model_api.py",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/test_api_client.py": {
+    "key_string": "1B50",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/test_api_client.py",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
+  },
+  "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/train_baseline_model.py": {
+    "key_string": "1B51",
+    "norm_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src/train_baseline_model.py",
+    "parent_path": "c:/Users/Tejas/Downloads/Cline-Recursive-Chain-of-Thought-System-CRCT-/src",
+    "tier": 1,
+    "is_directory": false
   }
 }

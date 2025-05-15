@@ -1,0 +1,4 @@
+- [x] **Playbooks Functionality**: Implement CRUD operations for playbooks, including listing, creating, editing, and deleting playbooks. (Status: Complete, implemented in Playbooks.tsx with API integration) 
+- [x] **Alerts Data**: Fetch and display churn risk notifications and other alerts. (Status: Complete, implemented in Alerts.tsx with API integration) 
+- [x] **Authentication Integration**: Implement login/logout functionality and protect routes based on user authentication status. (Status: Complete, implemented with AuthContext and Login component) 
+- [x] **Testing/Debugging**: Ensure all implemented features function as expected, debug any issues, and write basic tests if necessary. (Status: Complete, addressed issues in Playbooks, Alerts, and Authentication integration) 
